@@ -24,8 +24,13 @@
 
     .bg-image {
 		min-height: 285px;
-	    background: #867050 url('../images/home/tan-crane-bg.jpg') no-repeat left bottom;
-	    background-size: contain;
+	    background: #867050 url('../images/home/tan-crane-bg.jpg') no-repeat center bottom;
+	    background-size: 223px 143px;
+
+	    @media (min-width: 768px) {
+			background: #867050 url('../images/home/tan-crane-bg.jpg') no-repeat left bottom;
+		    background-size: contain;
+	    }
     }
 }
 
