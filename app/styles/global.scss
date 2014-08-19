@@ -1,7 +1,10 @@
+/* TYPOGRAPHY
+-------------------------------------------------- */
+
 body {
 	color: #fff;
 	font-family: 'Oswald', sans-serif;
-	letter-spacing: 1.5px;
+	letter-spacing: 1px;
 }
 
 p {
@@ -21,7 +24,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+ul {
 	margin-top: 0;
 	margin-bottom: 0;
 }
@@ -34,9 +38,8 @@ h2 {
 	}
 }
 
-.dark {
-	color: #333;
-}
+/* GLOBAL COMPONENTS
+-------------------------------------------------- */
 
 .btn-primary {
 	background: #cf6f28;
@@ -47,6 +50,39 @@ h2 {
 	background: #cf5d08;
 	border-color: #914211;
 }
+
+/* COLORS
+-------------------------------------------------- */
+
+.dark {
+	color: #333;
+}
+
+.dark-grey-on-light-grey {
+	background: #f1f1f1;
+	color: #666;
+}
+
+.white-on-grey {
+	background: #666;
+	color: #fff;
+}
+
+.grey-on-white {
+	background: #fff;
+	color: #666;
+}
+
+.white-on-tan {
+    background: #867050;
+}
+
+.white-on-light-tan {
+    background: #c3b8a8;
+}
+
+/* CONTENT CONTAINERS
+-------------------------------------------------- */
 
 .hero-image {
 	height: 300px;
@@ -60,13 +96,13 @@ h2 {
 	}
 }
 
-.hero-text-container {
-	background: #f1f1f1;
-	color: #666;
-}
-
 .text-container {
 	margin: 40px 0;
+}
+
+.list-container {
+	float: left;
+	margin: 20px 0;
 }
 
 .body-p {
@@ -89,5 +125,15 @@ h2 {
 
 	@media (min-width: 768px) {
 		margin: 0;
+	}
+}
+
+.column-list {
+	float: left;
+	width: 100%;
+
+	li {
+		float: left;
+		width: 50%;
 	}
 }

@@ -1,0 +1,43 @@
+/* CAPABILITIES
+-------------------------------------------------- */
+
+.hero-image-capabilities {
+    background: #fff url('../images/capabilities/capabilities-hero.jpg') no-repeat left bottom;
+    background-size: cover;
+}
+
+.capabilities-content-container-2 {
+    .bg-image {
+		min-height: 379px;
+	    background: #666 url('../images/capabilities/grey-tree-bg.png') no-repeat center bottom;
+	    background-size: 365px 379px;
+
+	    @media (min-width: 768px) and (max-width: 992px) {
+		    background: #666 url('../images/capabilities/grey-tree-bg.png') no-repeat left bottom;
+		    background-size: 365px 379px;
+	    }
+
+	    @media (min-width: 992px) {
+			background: #666 url('../images/capabilities/grey-tree-bg.png') no-repeat left bottom;
+		    background-size: 365px 379px;
+	    }
+    }
+}
+
+.capabilities-content-container-3 {
+    .bg-image {
+		min-height: 335px;
+	    background: #c3b8a8 url('../images/capabilities/light-tan-crane-bg.png') no-repeat center bottom;
+	    background-size: 274px 335px;
+
+	    @media (min-width: 768px) and (max-width: 992px) {
+		    background: #c3b8a8 url('../images/capabilities/light-tan-crane-bg.png') no-repeat left bottom;
+		    background-size: 274px 335px;
+	    }
+
+	    @media (min-width: 992px) {
+			background: #c3b8a8 url('../images/capabilities/light-tan-crane-bg.png') no-repeat left bottom;
+		    background-size: 274px 335px;
+	    }
+    }
+}
