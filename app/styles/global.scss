@@ -94,8 +94,17 @@ h2 {
 }
 
 .center {
-   text-align: center;
-   vertical-align: middle;
+	text-align: center;
+}
+
+.table {
+	tbody {
+		tr {
+			td {
+				vertical-align: middle;
+			}
+		}
+	}
 }
 
 .row-eq-height {
@@ -149,18 +158,19 @@ h2 {
 	}
 }
 
-ul {
-	li {
-		margin-bottom: 20px;
-	}
-}
+/* LISTS
+-------------------------------------------------- */
 
-.column-list {
-	float: left;
-	width: 100%;
+.star-bullet {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
 
 	li {
-		float: left;
-		width: 50%;
+	    padding-left: 30px;
+	    margin-bottom: 20px;
+	    background-image: url(../images/star-bullet.png);
+	    background-repeat: no-repeat;
+	    background-position: 0px 3px;
 	}
 }

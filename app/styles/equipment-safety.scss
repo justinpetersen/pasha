@@ -1,0 +1,20 @@
+/* EQUIPMENT & SAFETY
+-------------------------------------------------- */
+
+.hero-image-equipment-safety {
+    background: #fff url('../images/equipment-safety/equipment-safety-hero.jpg') no-repeat center bottom;
+    background-size: cover;
+}
+
+.equipment-table {
+	width: 440px;
+
+	tbody {
+		tr {
+			td {
+				width: 220px;
+				height: 220px;
+			}
+		}
+	}
+}
