@@ -19,15 +19,50 @@
 }
 
 .main-nav {
-	float: right;
-	clear: right;
-	margin-top: 40px;
-
-	color: #666;
 }
 
 .main-logo {
 	float: left;
 	margin-top: 10px;
 	margin-bottom: -75px;
+	max-width: 100%;
+	height: auto;
+}
+
+/* NAVBAR
+-------------------------------------------------- */
+
+.navbar-default {
+	float: right;
+	clear: right;
+	margin-top: 40px;
+	margin-bottom: 0;
+
+	color: #666;
+	background: #fff;
+	border: none;
+
+	.navbar-toggle:hover,
+	.navbar-toggle:focus {
+		background: #fff;
+	}
+
+	.navbar-collapse {
+		padding: 0;
+
+		.nav {
+			li {
+				a {
+					padding: 0;
+					margin-left: 40px;
+				}
+
+				a:hover,
+				a:focus {
+					color: #666;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
 }

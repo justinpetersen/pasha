@@ -6,17 +6,26 @@
 	color: #666;
 
 	.footer-p {
-		margin-top: 60px;
+		margin-top: 20px;
+
+		@media (min-width: 768px) {
+			margin-top: 60px;
+		}
 	}
 
 	.footer-logo {
 		margin-top: 20px;
-		margin-left: 25px;
 		margin-bottom: 20px;
+		margin-left: 25px;
 	}
 
 	.social-links-container {
-		margin-top: 50px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+
+		@media (min-width: 768px) {
+			margin-top: 50px;
+		}
 
 		.social-link {
 			margin-right: 20px;

@@ -14,6 +14,7 @@ a:active {
     color: #666;
 }
 
+p,
 h1,
 h2,
 h3,
@@ -22,6 +23,14 @@ h5,
 h6 {
 	margin-top: 0;
 	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 20px;
+
+	@media (min-width: 768px) {
+		font-size: 30px;
+	}
 }
 
 .dark {
@@ -64,6 +73,20 @@ h6 {
 }
 
 .gutter-p {
-	margin-right: 20px;
-	margin-bottom: 70px;
+	margin-right: 0;
+	margin-bottom: 40px;
+
+	@media (min-width: 768px) {
+		margin-right: 20px;
+		margin-bottom: 70px;
+	}
+}
+
+.center-mobile {
+	display: block;
+	margin: auto;
+
+	@media (min-width: 768px) {
+		margin: 0;
+	}
 }
