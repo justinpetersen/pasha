@@ -1,6 +1,14 @@
 /* HEADER
 -------------------------------------------------- */
 
+.header-container {
+	position: relative;
+
+	box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+ 	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
 .header-links {
 	float: right;
 	margin-top: 20px;
@@ -14,11 +22,12 @@
 	float: right;
 	clear: right;
 	margin-top: 40px;
-	
+
 	color: #666;
 }
 
 .main-logo {
 	float: left;
-	margin-bottom: -72px;
+	margin-top: 10px;
+	margin-bottom: -75px;
 }
