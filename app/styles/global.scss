@@ -31,6 +31,17 @@ ul {
 	margin-bottom: 0;
 }
 
+h1 {
+	font-size: 26px;
+	font-weight: 300;
+	line-height: 1.3;
+	letter-spacing: 2px;
+
+	@media (min-width: 768px) {
+		font-size: 36px;
+	}
+}
+
 h2 {
 	font-size: 20px;
 	font-weight: 300;
@@ -125,15 +136,29 @@ strong {
 	@media (min-width: 992px) {
 		height: 550px;
 	}
+
+	.hero-text {
+		margin-top: 220px;
+		font-size: 14px;
+		font-weight: 500;
+		text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+
+		@media (min-width: 768px) and (max-width: 992px) {
+			margin-top: 270px;
+			font-size: 36px;
+			font-weight: 300;
+		}
+
+		@media (min-width: 992px) {
+			margin-top: 400px;
+			font-size: 36px;
+			font-weight: 300;
+		}
+	}
 }
 
 .text-container {
 	margin: 40px 0;
-}
-
-.list-container {
-	float: left;
-	margin: 20px 0;
 }
 
 .table-container {
@@ -148,13 +173,12 @@ strong {
 	margin-top: 20px;
 }
 
-.gutter-p {
+.column-p {
 	margin-right: 0;
 	margin-bottom: 40px;
 
 	@media (min-width: 768px) {
 		margin-right: 20px;
-		margin-bottom: 70px;
 	}
 }
 
@@ -179,6 +203,10 @@ strong {
 -------------------------------------------------- */
 
 .table {
+	margin-bottom: 0;
+}
+
+.table-center {
 	tbody {
 		tr {
 			td {
@@ -187,10 +215,12 @@ strong {
 		}
 	}
 }
+
 .table-no-border {
 	tbody {
 		tr {
 			td {
+				padding: 5px 0 0 0;
 				border: 0;
 			}
 		}

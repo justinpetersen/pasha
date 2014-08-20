@@ -9,24 +9,35 @@
   	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
-.header-links {
-	float: right;
-	margin-top: 20px;
+.main-logo {
+	float: left;
+	margin-top: 15px;
+	margin-bottom: -75px;
+	height: auto;
 
-	.header-link {
-		margin-left: 30px;
+	@media (min-width: 768px) and (max-width: 992px) {
+		width: 270px;
+		height: auto;
+		margin-top: 15px;
+	}
+
+	@media (min-width: 992px) {
+		width: 466px;
+		height: auto;
+		margin-top: 10px;
 	}
 }
 
-.main-logo {
-	float: left;
-	margin-top: 20px;
-	margin-bottom: -75px;
-	max-width: 80%;
-	height: auto;
+.header-links {
+	float: right;
+	margin-top: 10px;
 
-	@media (min-width: 768px) {
-		margin-top: 10px;
+	@media (min-width: 992px) {
+		margin-top: 20px;
+	}
+
+	.header-link {
+		margin-left: 30px;
 	}
 }
 
@@ -38,20 +49,27 @@
 	clear: right;
 	margin-top: 20px;
 	margin-bottom: 10px;
+	min-height: 20px;
 	width: 100%;
 
 	color: #666;
+	font-weight: 500;
 	background: none;
 	border: none;
 
 	@media (min-width: 768px) {
 		width: initial;
-		margin-top: 40px;
-		margin-bottom: 0;
+		margin-top: 2px;
+	}
+
+	@media (min-width: 992px) {
+		margin-top: 56px;
 	}
 
 	.navbar-toggle {
-		margin-bottom: 20px;
+		margin: 0;
+		padding: 10px 0 20px 0;
+		border: none;
 	}
 
 	.navbar-toggle:hover,
@@ -61,14 +79,20 @@
 
 	.navbar-collapse {
 		padding: 0;
+		border: none;
 
 		.nav {
 			li {
 				a {
 					padding: 0;
-					margin-left: 80px;
+					margin-top: 5px;
+					margin-left: 56px;
 
-					@media (min-width: 768px) {
+					@media (min-width: 768px) and (max-width: 1200px) {
+						margin-left: 20px;
+					}
+
+					@media (min-width: 1200px) {
 						margin-left: 40px;
 					}
 				}
