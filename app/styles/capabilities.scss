@@ -8,16 +8,24 @@
 
 .capabilities-content-container-2 {
     .bg-image {
-		min-height: 399px;
-	    background: #666 url('../images/capabilities/grey-tree-bg.png') no-repeat right bottom;
-	    background-size: 365px 379px;
+		min-height: 190px;
+	    background: #666 url('../images/capabilities/grey-tree-bg.png') no-repeat center bottom;
+	    background-size: 183px 190px;
 
 	    @media (min-width: 768px) and (max-width: 992px) {
+			min-height: 266px;
 		    background: #666 url('../images/capabilities/grey-tree-bg.png') no-repeat right bottom;
-		    background-size: 365px 379px;
+		    background-size: 237px 246px;
 	    }
 
-	    @media (min-width: 992px) {
+	    @media (min-width: 992px) and (max-width: 1200px) {
+			min-height: 342px;
+			background: #666 url('../images/capabilities/grey-tree-bg.png') no-repeat right bottom;
+		    background-size: 310px 322px;
+	    }
+
+	    @media (min-width: 1200px) {
+			min-height: 399px;
 			background: #666 url('../images/capabilities/grey-tree-bg.png') no-repeat right bottom;
 		    background-size: 365px 379px;
 	    }
@@ -26,16 +34,18 @@
 
 .capabilities-content-container-3 {
     .bg-image {
-		min-height: 355px;
-	    background: #c3b8a8 url('../images/capabilities/light-tan-crane-bg.png') no-repeat right bottom;
-	    background-size: 274px 335px;
+		min-height: 168px;
+	    background: #c3b8a8 url('../images/capabilities/light-tan-crane-bg.png') no-repeat center bottom;
+	    background-size: 137px 168px;
 
-	    @media (min-width: 768px) and (max-width: 992px) {
+	    @media (min-width: 768px) and (max-width: 1200px) {
+			min-height: 271px;
 		    background: #c3b8a8 url('../images/capabilities/light-tan-crane-bg.png') no-repeat right bottom;
-		    background-size: 274px 335px;
+		    background-size: 206px 251px;
 	    }
 
-	    @media (min-width: 992px) {
+	    @media (min-width: 1200px) {
+			min-height: 355px;
 			background: #c3b8a8 url('../images/capabilities/light-tan-crane-bg.png') no-repeat right bottom;
 		    background-size: 274px 335px;
 	    }

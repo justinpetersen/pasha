@@ -5,3 +5,16 @@
     background: #fff url('../images/berths/berths-hero.jpg') no-repeat center center;
     background-size: cover;
 }
+
+.map-container {
+	margin-left: 0;
+
+	@media (min-width: 992px) {
+		margin-left: 120px;
+	}
+}
+
+.map {
+	max-width: 100%;
+	height: auto;
+}
