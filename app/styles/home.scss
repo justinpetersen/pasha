@@ -16,18 +16,20 @@
 
 .home-content-container-2 {
     .bg-image {
-		min-height: 285px;
+		min-height: 143px;
 	    background: #867050 url('../images/home/tan-crane-bg.jpg') no-repeat center bottom;
 	    background-size: 223px 143px;
 
 	    @media (min-width: 768px) and (max-width: 992px) {
+			min-height: 224px;
 		    background: #867050 url('../images/home/tan-crane-bg.jpg') no-repeat left bottom;
 		    background-size: 335px 224px;
 	    }
 
 	    @media (min-width: 992px) {
+			min-height: 285px;
 			background: #867050 url('../images/home/tan-crane-bg.jpg') no-repeat left bottom;
-		    background-size: contain;
+		    background-size: 446px 285px;
 	    }
     }
 }
