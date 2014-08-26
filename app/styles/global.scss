@@ -201,6 +201,14 @@ strong {
 	margin-top: 20px;
 }
 
+.mobile-body-p {
+	margin-top: 20px;
+
+	@media (min-width: 768px) {
+		margin-top: 0;
+	}
+}
+
 .column-p {
 	margin-right: 0;
 	margin-bottom: 30px;
