@@ -9,7 +9,8 @@ var HeroImage = function() {
 };
 
 HeroImage.prototype.init = function() {
-	imagesLoaded( $(this.imageSelector), $.proxy(this.show, this));
+	// imagesLoaded( $(this.imageSelector), $.proxy(this.show, this));
+	$(this.imageSelector).waitForImages($.proxy(this.show, this));
 };
 
 HeroImage.prototype.show = function() {

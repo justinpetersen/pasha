@@ -145,6 +145,7 @@ strong {
 -------------------------------------------------- */
 
 .hero-image {
+	position: relative;
 	height: 300px;
 	opacity: 0;
 	z-index: 100;
@@ -158,19 +159,20 @@ strong {
 	}
 
 	.hero-text {
-		margin-top: 220px;
+		position: absolute;
+		bottom: 30px;
 		font-size: 14px;
 		font-weight: 500;
 		text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
 
 		@media (min-width: 768px) and (max-width: 992px) {
-			margin-top: 270px;
+			bottom: 40px;
 			font-size: 36px;
 			font-weight: 300;
 		}
 
 		@media (min-width: 992px) {
-			margin-top: 400px;
+			bottom: 40px;
 			font-size: 36px;
 			font-weight: 300;
 		}
