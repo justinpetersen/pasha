@@ -113,8 +113,13 @@
 
 				a:hover,
 				a:focus {
-					color: #666;
-					text-decoration: underline;
+					color: #a79561;
+					text-decoration: none;
+				}
+
+				.active {
+					color: #a79561;
+					cursor: default;
 				}
 			}
 		}
