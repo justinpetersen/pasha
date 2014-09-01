@@ -147,6 +147,7 @@ strong {
 .hero-image {
 	height: 300px;
 	opacity: 0;
+	z-index: 100;
 
 	@media (min-width: 768px) and (max-width: 992px) {
 		height: 400px;

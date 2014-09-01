@@ -14,14 +14,12 @@ HeroImage.prototype.init = function() {
 
 HeroImage.prototype.show = function() {
 	// Fade in image
-	$(this.imageSelector).animate({opacity: 1}, 400);
+	$(this.imageSelector).transition({opacity: 1}, 400);
 
 	// Fade and slide in text
 	$(this.textSelector).css('opacity', 0);
-	$(this.textSelector).css('padding-top', '10px');
-	$(this.textSelector).delay(400).animate({
-		opacity: 1,
-		'padding-top': 0
+	$(this.textSelector).delay(200).transition({
+		opacity: 1
 	}, 400);
 };
 
