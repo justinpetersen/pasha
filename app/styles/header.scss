@@ -18,8 +18,8 @@
 	margin-bottom: -115px;
 
 	@media (min-width: 768px) {
-		width: 290px;
-		margin-top: 15px;
+		width: 280px;
+		margin-top: 19px;
 		margin-bottom: -75px;
 	}
 
@@ -32,6 +32,7 @@
 .header-links {
 	float: right;
 	margin-top: 10px;
+	font-size: 13px;
 
 	@media (min-width: 992px) {
 		margin-top: 20px;
@@ -53,7 +54,7 @@
 	margin: 0 0 15px 0;
 
 	@media (min-width: 768px) {
-		margin: 0 0 7px 0;
+		margin: 0 0 6px 0;
 	}
 }
 
@@ -74,12 +75,12 @@
 
 	@media (min-width: 768px) {
 		width: initial;
-		margin-top: 27px;
+		margin-top: 29px;
 	}
 
 	@media (min-width: 992px) {
 		font-size: 14px;
-		margin-top: 56px;
+		margin-top: 57px;
 	}
 
 	.navbar-toggle {
@@ -100,6 +101,7 @@
 		.nav {
 			li {
 				a {
+					font-weight: 600;
 					padding: 0;
 					margin-top: 5px;
 
