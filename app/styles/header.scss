@@ -8,64 +8,70 @@
 	box-shadow: 0 2px 5px rgba(0,0,0,0.5);
  	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5);
   	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-}
 
-.main-logo {
-	float: left;
-	width: 250px;
-	height: auto;
-	margin-top: 10px;
-	margin-bottom: -115px;
-
-	@media (min-width: 768px) {
-		width: 280px;
-		margin-top: 19px;
-		margin-bottom: -75px;
+  	@media (min-width: 768px) {
+		height: 100px;
 	}
 
-	@media (min-width: 992px) {
-		width: 466px;
-		margin-top: 10px;
-	}
-}
+  	@media (min-width: 992px) {
+		height: 142px;
+  	}
 
-.header-links {
-	float: right;
-	margin-top: 10px;
-	font-size: 13px;
+  	.header-inner-container {
+  		position: relative;
 
-	@media (min-width: 992px) {
-		margin-top: 20px;
-	}
 
-	.header-link {
-		margin-left: 20px;
+		.main-logo {
+			float: left;
+			position: absolute;
+			top: 10px;
+			left: 15px;
+			width: 250px;
+			height: auto;
 
-		@media (min-width: 1200px) {
-			margin-left: 30px;
+			@media (min-width: 768px) {
+				top: 19px;
+				width: 280px;
+			}
+
+			@media (min-width: 992px) {
+				top: 10px;
+				width: 466px;
+			}
 		}
-	}
+
+		.header-links {
+			float: right;
+			position: absolute;
+			top: 10px;
+			right: 15px;
+			font-size: 13px;
+
+			@media (min-width: 992px) {
+				top: 20px;
+			}
+
+			.header-link {
+				margin-left: 20px;
+
+				@media (min-width: 1200px) {
+					margin-left: 30px;
+				}
+			}
+		}
+  	}
 }
 
 /* NAVBAR
 -------------------------------------------------- */
 
-.navbar-nav {
-	margin: 0 0 15px 0;
-
-	@media (min-width: 768px) {
-		margin: 0 0 6px 0;
-	}
-}
-
 .navbar-default {
 	float: right;
-	clear: right;
 	text-align: right;
-	margin-top: 31px;
+	position: relative;
+	margin-top: 37px;
 	margin-bottom: 0;
 	min-height: 20px;
-	width: 100%;
 
 	color: #666;
 	font-size: 13px;
@@ -74,13 +80,15 @@
 	border: none;
 
 	@media (min-width: 768px) {
-		width: initial;
-		margin-top: 29px;
+		position: absolute;
+		margin-top: 0;
+		top: 69px;
+		right: 15px;
 	}
 
 	@media (min-width: 992px) {
+		top: 107px;
 		font-size: 14px;
-		margin-top: 57px;
 	}
 
 	.navbar-toggle {
@@ -97,6 +105,10 @@
 	.navbar-collapse {
 		padding: 0;
 		border: none;
+
+		.navbar-nav {
+			margin: 0 0 15px 0;
+		}
 
 		.nav {
 			li {
