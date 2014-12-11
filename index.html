@@ -9,12 +9,23 @@
         <link rel="shortcut icon" href=/597f2d51.favicon.ico>
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel=stylesheet type=text/css>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel=stylesheet href=styles/22f27e3b.main.css>
+        <link rel=stylesheet href=styles/f23d0269.main.css>
         <!--[if lt IE 9]>
         <script src="scripts/53601738.html5shiv.js"></script>
         <![endif]-->
     
     <body>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id=videoModal tabindex=-1 role=dialog aria-hidden=true>
+            <div class="modal-dialog modal-lg">
+                <div class=video-player-container>
+                    <div class="close-video-modal-button hidden-xs"><h5>close</h5></div>
+                    <iframe class=vimeo-player src=//player.vimeo.com/video/114249227 allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
 
 
         <div class="container-fluid header-container">
@@ -52,7 +63,15 @@
             </div>
         </div>
 
-        <div class="container-fluid hero-image hero-image-home"></div>
+        <div class="container-fluid hero-image hero-image-home">
+            <div class=container>
+                <div class=row>
+                    <div class="col-xs-12 center">
+                        <button type=button class="btn btn-primary video-button" data-toggle=modal data-target=#videoModal><span class="glyphicon glyphicon-play"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="container-fluid dark-grey-on-light-grey">
             <div class=container>
@@ -177,4 +196,6 @@
         </script>
 
         <script src=scripts/9d2f4f51.plugins.js></script>
+
+        <script src=scripts/63ba6645.home-main.js></script>
 
