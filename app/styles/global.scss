@@ -139,6 +139,15 @@ strong {
 	}
 }
 
+.absolute-center {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
 /* HERO IMAGES
 -------------------------------------------------- */
 
@@ -153,6 +162,18 @@ strong {
 
 	@media (min-width: 992px) {
 		height: 550px;
+	}
+
+	.video-button {
+		margin-top: 150px;
+
+		@media (min-width: 768px) and (max-width: 992px) {
+			margin-top: 200px;
+		}
+
+		@media (min-width: 992px) {
+			margin-top: 275px;
+		}
 	}
 
 	.hero-text {
