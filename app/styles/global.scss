@@ -169,6 +169,13 @@ strong {
 		cursor: pointer;
 		width: 60px;
 		height: 60px;
+		opacity: 0.85;
+		-webkit-transition: opacity .25s ease;
+		-moz-transition: opacity .25s ease;
+
+		&:hover {
+			opacity: 1;
+		}
 
 		@media (min-width: 768px) and (max-width: 992px) {
 			margin-top: 140px;
